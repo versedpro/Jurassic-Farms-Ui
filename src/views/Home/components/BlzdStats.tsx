@@ -32,9 +32,9 @@ const BlzdStats = () => {
   const cakeSupply = getBalanceNumber(circSupply);
   const marketCap = eggPrice.times(circSupply);
 
-  let blzdPerBlock = 0;
-  if(farms && farms[0] && farms[0].blzdPerBlock){
-    blzdPerBlock = new BigNumber(farms[0].blzdPerBlock).div(new BigNumber(10).pow(18)).toNumber();
+  let dinoPerBlock = 0;
+  if(farms && farms[0] && farms[0].dinoPerBlock){
+    dinoPerBlock = new BigNumber(farms[0].dinoPerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
 
   return (
@@ -57,7 +57,7 @@ const BlzdStats = () => {
         </Row>
         <Row>
           <Text fontSize="14px">{TranslateString(540, 'New BLZD/block')}</Text>
-          <Text bold fontSize="14px">{blzdPerBlock}</Text>
+          <Text bold fontSize="14px">{dinoPerBlock}</Text>
         </Row>
       </CardBody>
     </StyledBlzdStats>
