@@ -10,7 +10,7 @@ import BlzdHarvestBalance from './BlzdHarvestBalance'
 import BlzdWalletBalance from './BlzdWalletBalance'
 
 const StyledFarmStakingCard = styled(Card)`
-  background-image: url('/images/blzd/2a.png');
+  background-image: url('/images/dino/dino-egg.png');
   background-size: 256px;
   background-repeat: no-repeat;
   background-position: top right;

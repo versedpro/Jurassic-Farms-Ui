@@ -1837,10 +1837,10 @@
   dependencies:
     "@json-rpc-tools/types" "^1.6.1"
 
-"@jurassicfarm/jurassic-uikit@^0.0.8#releases":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@jurassicfarm/jurassic-uikit/-/jurassic-uikit-0.0.8.tgz#1056ffd6fdab20ef296f8062bb4af8a65b4b7d1e"
-  integrity sha512-3qHWB/GDJMucdJJI0OZ45yEkMt1FeKQavx7M9skZd7o/SOo67TrTZuOnD28lE7jPt6COGrKCEz8GMqmxRfC8ZQ==
+"@jurassicfarm/jurassic-uikit@^0.0.9#releases":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@jurassicfarm/jurassic-uikit/-/jurassic-uikit-0.0.9.tgz#6dfd262f8caf11766cf9855b3fd5cf1e26f7fc29"
+  integrity sha512-uJGpp1El4PbcsVm1zEppfuHbQDN5mvgaggHV4dcaOQeeWreU08ufeyqA4YqaE5+IVkJ6lU2OpOOCYLLWo2afJQ==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
