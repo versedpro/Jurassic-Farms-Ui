@@ -1,1 +1,1 @@
-export { default } from './BLZDStaking'
+export { default } from './DINOStaking'

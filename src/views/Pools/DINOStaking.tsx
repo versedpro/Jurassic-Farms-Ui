@@ -71,8 +71,11 @@ const Hero = styled.div`
   grid-template-columns: 1fr;
   margin-left: auto;
   margin-right: auto;
-  max-width: 250px;
+  max-width: 300px;
   padding: 48px 0;
+  h1 {
+    font-size: 22px;
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -84,13 +87,20 @@ const Hero = styled.div`
   }
   img {
     height: auto;
-    max-width: 396px;
+    max-width: 172px;
   }
   @media (min-width: 576px) {
     grid-template-columns: 1fr 1fr;
     margin: 0;
     max-width: none;
+    img { 
+      max-width: 340px;
+    }
+    h1 {
+    font-size: 64px;
   }
+  }
+  
 `
 
 export default Farm
