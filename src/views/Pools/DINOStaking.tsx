@@ -72,7 +72,7 @@ const Hero = styled.div`
   margin-left: auto;
   margin-right: auto;
   max-width: 300px;
-  padding: 48px 0;
+  padding: 0 0 18px 0;
   h1 {
     font-size: 22px;
   }
