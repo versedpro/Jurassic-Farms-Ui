@@ -7,7 +7,7 @@ import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
 import { getCakeAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
-import { useFarms, usePriceBlzdBusd } from '../../../state/hooks'
+import { useFarms } from '../../../state/hooks'
 
 const StyledRaptorStats = styled(Card)`
   margin-left: auto;
@@ -27,14 +27,14 @@ const RaptorStats = () => {
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms();
-  const eggPrice = usePriceBlzdBusd();
+  // const eggPrice = usePriceBlzdBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
-  const marketCap = eggPrice.times(circSupply);
+  // const marketCap = eggPrice.times(circSupply);
 
-  let dinoPerBlock = 0;
+  // const dinoPerBlock = 0;
   if(farms && farms[0] && farms[0].dinoPerBlock){
-    dinoPerBlock = new BigNumber(farms[0].dinoPerBlock).div(new BigNumber(10).pow(18)).toNumber();
+    // dinoPerBlock = new BigNumber(farms[0].dinoPerBlock).div(new BigNumber(10).pow(18)).toNumber();
   }
 
   return (

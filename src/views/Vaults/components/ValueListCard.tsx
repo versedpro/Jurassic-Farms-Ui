@@ -1,38 +1,39 @@
-import React, { useState, useCallback } from 'react'
+import React, {  } from 'react'
 import styled from 'styled-components'
-import { Heading, Card, CardBody, Button, Text } from '@jurassicfarm/jurassic-uikit'
-import { useWallet } from '@binance-chain/bsc-use-wallet'
+// import { Heading, Card, CardBody, Button, Text } from '@jurassicfarm/jurassic-uikit'
+import { CardBody, Text } from '@jurassicfarm/jurassic-uikit'
+// import { useWallet } from '@binance-chain/bsc-use-wallet'
 import useI18n from 'hooks/useI18n'
 import { getBalanceNumber } from 'utils/formatBalance'
 import useTokenBalance from 'hooks/useTokenBalance'
 import { getBusdAddress, getDinoAddress } from 'utils/addressHelpers'
-import { useAllHarvest } from 'hooks/useHarvest'
-import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
-import UnlockButton from 'components/UnlockButton'
+// import { useAllHarvest } from 'hooks/useHarvest'
+// import useFarmsWithBalance from 'hooks/useFarmsWithBalance'
+// import UnlockButton from 'components/UnlockButton'
 import CardValue from './CardValue'
 
-const StyledValueListCard = styled(Card)`
-  width: 460px;
-  height: 200px;
-  padding: 30px 20px;
-  font-size: 26px;
-  border: 2px solid #ffd11d;
-  border-radius: 10px;
-  text-align: center;
-  margin-top: 10px;
-`
+// const StyledValueListCard = styled(Card)`
+//   width: 460px;
+//   height: 200px;
+//   padding: 30px 20px;
+//   font-size: 26px;
+//   border: 2px solid #ffd11d;
+//   border-radius: 10px;
+//   text-align: center;
+//   margin-top: 10px;
+// `
 
-const LockedValue = styled.div`
-  color: #26f674;
-  font-size: 36px;
-  font-weight: 700;
-  font-family: fontBold;
-`
+// const LockedValue = styled.div`
+//   color: #26f674;
+//   font-size: 36px;
+//   font-weight: 700;
+//   font-family: fontBold;
+// `
 
-const ListTitle = styled.p`
-  position: relative;
-  top: -40px;
-`
+// const ListTitle = styled.p`
+//   position: relative;
+//   top: -40px;
+// `
 
 const BalanceList = styled.div`
   width: 400px;
@@ -64,45 +65,45 @@ const ListItemInfo = styled.div`
   min-width: 140px;
 `
 
-const ListItemImage = styled.div`
-  margin-right: 15px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #000;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
-`
+// const ListItemImage = styled.div`
+//   margin-right: 15px;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   background-color: #000;
+//   display: -webkit-flex;
+//   display: flex;
+//   -webkit-justify-content: center;
+//   justify-content: center;
+//   -webkit-align-items: center;
+//   align-items: center;
+// `
 
 const ItemValue = styled.span`
 `
 
-const Block = styled.div`
-  margin-bottom: 16px;
-`
-
-const TokenImageWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-`
-
-const CardImage = styled.img`
-  margin-right: 8px;
-`
-
-const Label = styled.div`
-  color: ${({ theme }) => theme.colors.textSubtle};
-  font-size: 14px;
-`
-
-const Actions = styled.div`
-  margin-top: 24px;
-`
+// const Block = styled.div`
+//   margin-bottom: 16px;
+// `
+//
+// const TokenImageWrapper = styled.div`
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 16px;
+// `
+//
+// const CardImage = styled.img`
+//   margin-right: 8px;
+// `
+//
+// const Label = styled.div`
+//   color: ${({ theme }) => theme.colors.textSubtle};
+//   font-size: 14px;
+// `
+//
+// const Actions = styled.div`
+//   margin-top: 24px;
+// `
 
 const ValueListCard = () => {
   const TranslateString = useI18n()

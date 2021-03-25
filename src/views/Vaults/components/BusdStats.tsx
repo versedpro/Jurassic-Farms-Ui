@@ -3,11 +3,11 @@ import { Card, CardBody, Heading, Text } from '@jurassicfarm/jurassic-uikit'
 import BigNumber from 'bignumber.js/bignumber'
 import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
-import useTokenBalance, { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
+import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
 import { getBusdAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
-import { useFarms, usePriceBlzdBusd } from '../../../state/hooks'
+// import { useFarms, usePriceBlzdBusd } from '../../../state/hooks'
 
 const StyledBusdStats = styled(Card)`
   margin-left: auto;
@@ -26,8 +26,8 @@ const BusdStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getBusdAddress())
-  const tokenBalance = useTokenBalance(getBusdAddress())
-  const farms = useFarms();
+  // const tokenBalance = useTokenBalance(getBusdAddress())
+  // const farms = useFarms();
   // const eggPrice = usePriceBlzdBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);

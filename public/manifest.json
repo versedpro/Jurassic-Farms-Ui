@@ -1,12 +1,12 @@
 {
-  "short_name": "PancakeSwap",
-  "name": "PancakeSwap",
-  "description": "Farm CAKE with Pancake LP Tokens",
+  "short_name": "JurassicFarm",
+  "name": "JurassicFarm",
+  "description": "Farm DINO and Raptor with LP Tokens",
   "icons": [
     {
       "src": "favicon.ico",
       "type": "image/x-icon",
-      "sizes": "256x256"
+      "sizes": "16x16"
     }
   ],
   "start_url": ".",

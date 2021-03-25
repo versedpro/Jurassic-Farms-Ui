@@ -5,9 +5,9 @@ import styled from 'styled-components'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { useTotalSupply, useBurnedBalance } from 'hooks/useTokenBalance'
 import useI18n from 'hooks/useI18n'
-import { getCakeAddress, getDinoAddress } from 'utils/addressHelpers'
+import { getDinoAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
-import { useFarms, usePriceBlzdBusd } from '../../../state/hooks'
+// import { useFarms, usePriceBlzdBusd } from '../../../state/hooks'
 
 const StyledDinoStats = styled(Card)`
   margin-left: auto;
@@ -26,11 +26,11 @@ const DinoStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getDinoAddress())
-  const farms = useFarms();
-  const eggPrice = usePriceBlzdBusd();
+  // const farms = useFarms();
+  // const eggPrice = usePriceBlzdBusd();
   const circSupply = totalSupply ? totalSupply.minus(burnedBalance) : new BigNumber(0);
   const cakeSupply = getBalanceNumber(circSupply);
-  const marketCap = eggPrice.times(circSupply);
+  // const marketCap = eggPrice.times(circSupply);
 
   // let dinoPerBlock = 0;
   // if(farms && farms[0] && farms[0].dinoPerBlock){

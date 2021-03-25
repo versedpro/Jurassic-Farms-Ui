@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { } from 'react'
 import styled from 'styled-components'
 import { Heading, Text, BaseLayout } from '@jurassicfarm/jurassic-uikit'
 import useI18n from 'hooks/useI18n'
