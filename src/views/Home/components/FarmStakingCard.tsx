@@ -72,10 +72,13 @@ const FarmedStakingCard = () => {
           params: {
             type: 'ERC20',
             options: {
-              address: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
-              symbol: 'BLZD',
+              // address: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
+              // symbol: 'BLZD',
+              address: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
+              symbol: 'DINO',
               decimals: '18',
-              image: 'https://blzd-frontend.vercel.app/images/farms/blzd.png',
+              // image: 'https://blzd-frontend.vercel.app/images/farms/blzd.png',
+              iamge: ''
             },
           },
         })
@@ -96,24 +99,24 @@ const FarmedStakingCard = () => {
           {TranslateString(542, 'Farms & Staking')}
         </Heading>
         <TokenImageWrapper>
-          <CardImage src="/images/blzd/2.png" alt="blzd logo" width={64} height={64} />
+          <CardImage src="/images/dino/logo.png" alt="dino logo" width={64} height={64} />
           <Button onClick={addWatchBlzdToken} scale="sm">
             + <img style={{ marginLeft: 8 }} width={16} src="/images/wallet/metamask.png" alt="metamask logo" />
           </Button>
         </TokenImageWrapper>
         <Block>
           <BlzdHarvestBalance />
-          <Label>{TranslateString(544, 'BLZD to Harvest')}</Label>
+          <Label>{TranslateString(544, 'DINO to Harvest')}</Label>
         </Block>
         <Block>
           <BlzdWalletBalance />
-          <Label>{TranslateString(546, 'BLZD in Wallet')}</Label>
+          <Label>{TranslateString(546, 'DINO in Wallet')}</Label>
         </Block>
         <Actions>
           {account ? (
             <Button id="harvest-all" disabled={balancesWithValue.length <= 0 || pendingTx} onClick={harvestAllFarms}>
               {pendingTx
-                ? TranslateString(548, 'Collecting BLZD')
+                ? TranslateString(548, 'Collecting DINO')
                 : TranslateString(999, `Harvest all (${balancesWithValue.length})`)}
             </Button>
           ) : (

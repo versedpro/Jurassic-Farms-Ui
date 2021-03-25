@@ -56,6 +56,11 @@ const config: MenuEntry[] = [
     href: 'https://medium.com/jurassicfarm',
     external: true,
   },
+  {
+    label: 'Vaults',
+    icon: 'HomeIcon',
+    href: '/vaults',
+  }
 ]
 
 export default config

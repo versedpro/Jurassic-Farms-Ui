@@ -12,6 +12,15 @@ const tokens = {
       decimals: 18,
       projectLink: 'https://jurassicfarm.app/',
     },
+    dino: {
+      symbol: 'DINO',
+      address: {
+        56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
+        97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
+      },
+      decimals: 18,
+      projectLink: 'https://jurassicfarm.app/',
+    },
     cake: {
       symbol: 'CAKE',
       address: {

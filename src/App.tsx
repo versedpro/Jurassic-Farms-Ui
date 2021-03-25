@@ -8,6 +8,7 @@ import GlobalStyle from './style/Global'
 import Menu from './components/Menu'
 import PageLoader from './components/PageLoader'
 import Pools from './views/Pools'
+import Vaults from './views/Vaults'
 import NftGlobalNotification from './views/Nft/components/NftGlobalNotification'
 
 // Route-based code splitting
@@ -52,6 +53,9 @@ const App: React.FC = () => {
             </Route>
             <Route path="/pools">
               <Pools />
+            </Route>
+            <Route path="/vaults">
+              <Vaults />
             </Route>
             {/* <Route path="/lottery"> */}
             {/*  <Lottery /> */}

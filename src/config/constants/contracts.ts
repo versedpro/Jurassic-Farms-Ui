@@ -1,30 +1,42 @@
 export default {
+  bscpad: {
+    97: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700',
+    56: '0x5a3010d4d8d3b5fb49f8b6e57fb9e48063f16700',
+  },
+  sil: {
+    97: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB',
+    56: '0xc66E4De0d9b4F3CB3f271c37991fE62f154471EB',
+  },
   cake: {
-    56: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
-    97: '0x1977ECbdE6832920c3554E238deDFfBC5ed996c9',
+    97: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
+    56: '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82',
   },
   masterChef: {
-    56: '0x2078F4A75c92A6918D13e3e2F14183443ebf55D3',
-    97: '',
+    97: '0x318c3AE7423Cc82F9EC524353Ec2526f72D70386',
+    56: '0x318c3AE7423Cc82F9EC524353Ec2526f72D70386',
   },
   wbnb: {
+    97: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
     56: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c',
-    97: '',
   },
   lottery: {
-    56: '',
     97: '',
+    56: '',
   },
   lotteryNFT: {
-    56: '',
     97: '',
+    56: '',
   },
   mulltiCall: {
-    56: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
     97: '0x67ADCB4dF3931b0C5Da724058ADC2174a9844412',
+    56: '0x1ee38d535d541c55c9dae27b12edf090c608e6fb',
   },
   busd: {
-    56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
-    97: '',
+    97: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+    56: '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+  },
+  dino: {
+    97: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',
+    56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d', // FIXME:
   },
 }
