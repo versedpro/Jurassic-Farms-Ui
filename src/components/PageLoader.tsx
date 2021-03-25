@@ -1,5 +1,7 @@
 import React from 'react'
+import Lottie from 'react-lottie'
 import styled from 'styled-components'
+import animationData from '../lotties/dinosaur.json'
 import Page from './layout/Page'
 
 const Wrapper = styled(Page)`
@@ -8,34 +10,19 @@ const Wrapper = styled(Page)`
   align-items: center;
 `
 
-const LogoIcon = styled.div`
-  transition: transform 0.3s ease;
-  margin-bottom: 24px;
-  animation: pulse 1.25s ease-in-out infinite;
-  @keyframes pulse {
-    0% {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-    50% {
-      -webkit-transform: scale3d(1.05, 1.05, 1.05);
-      transform: scale3d(1.05, 1.05, 1.05);
-    }
-    to {
-      -webkit-transform: scaleX(1);
-      transform: scaleX(1);
-    }
-  }
-`
-
-const PageLoader: React.FC = () => {
-  return (
-    <Wrapper>
-      <LogoIcon>
-        <img style={{ height: 86 }} src="/images/blzd/logo.png" alt="logo" />
-      </LogoIcon>
-    </Wrapper>
-  )
+const defaultOptions = {
+  loop: true,
+  autoplay: true,
+  animationData,
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice',
+  },
 }
+
+const PageLoader: React.FC = () => (
+  <Wrapper>
+    <Lottie options={defaultOptions} height={500} width={500} />
+  </Wrapper>
+)
 
 export default PageLoader
