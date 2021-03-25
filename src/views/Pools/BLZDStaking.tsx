@@ -9,7 +9,6 @@ import useI18n from 'hooks/useI18n'
 import { usePools, useBlock } from 'state/hooks'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
-// import Coming from './components/Coming'
 import PoolCard from './components/PoolCard'
 import PoolTabButtons from './components/PoolTabButtons'
 import Divider from './components/Divider'
@@ -31,16 +30,16 @@ const Farm: React.FC = () => {
       <Hero>
         <div>
           <Heading as="h1" size="xxl" mb="16px">
-            {TranslateString(282, 'BLZD Pool')}
+            {TranslateString(282, 'DINO Pool')}
           </Heading>
           <ul>
-            <li>{TranslateString(580, 'Stake BLZD to earn tokens.')}</li>
+            <li>{TranslateString(580, 'Stake DINO to earn tokens.')}</li>
             <li>{TranslateString(404, 'You can unstake at any time.')}</li>
             <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
           </ul>
         </div>
         <div style={{ textAlign: 'right' }}>
-          <img src="/images/blzdstakepage.png" alt="BLZD Pool icon" />
+          <img src="/images/dino/pools-bg.png" alt="DINO Pool icon" />
         </div>
       </Hero>
       <PoolTabButtons />

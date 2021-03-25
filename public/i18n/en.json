@@ -771,7 +771,7 @@
     {
       "data": {
         "stringId": 580,
-        "text": "Stake BLZD to earn new tokens."
+        "text": "Stake DINO to earn new tokens."
       }
     },
     {
@@ -789,7 +789,7 @@
     {
       "data": {
         "stringId": 586,
-        "text": "BLZD to burn (USD)"
+        "text": "DINO to burn (USD)"
       }
     },
     {
@@ -819,13 +819,13 @@
     {
       "data": {
         "stringId": 596,
-        "text": "Buy BLZD and BNB tokens"
+        "text": "Buy DINO and BNB tokens"
       }
     },
     {
       "data": {
         "stringId": 598,
-        "text": "Get BLZD-BNB LP tokens by adding BLZD and BNB liquidity"
+        "text": "Get DINO-BNB LP tokens by adding DINO and BNB liquidity"
       }
     },
     {
@@ -837,7 +837,7 @@
     {
       "data": {
         "stringId": 602,
-        "text": "While the sale is live, commit your BLZD-LP tokens to buy the IFO tokens"
+        "text": "While the sale is live, commit your DINO-LP tokens to buy the IFO tokens"
       }
     },
     {
@@ -873,7 +873,7 @@
     {
       "data": {
         "stringId": 614,
-        "text": "Trade in for BLZD, or keep for your collection!"
+        "text": "Trade in for DINO, or keep for your collection!"
       }
     },
     {
@@ -915,7 +915,7 @@
     {
       "data": {
         "stringId": 628,
-        "text": "When you trade in this NFT to receive BLZD, you will lose access to it forever!"
+        "text": "When you trade in this NFT to receive DINO, you will lose access to it forever!"
       }
     },
     {
@@ -945,7 +945,7 @@
     {
       "data": {
         "stringId": 638,
-        "text": "Winners can trade in their NFTs for a BLZD value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
+        "text": "Winners can trade in their NFTs for a DINO value until the expiry date written below. If you don't trade in your NFT by then, don\u2019t worry: you\u2019ll still keep it in your wallet!"
       }
     },
     {
@@ -987,7 +987,7 @@
     {
       "data": {
         "stringId": 654,
-        "text": "Trade in for BLZD"
+        "text": "Trade in for DINO"
       }
     },
     {
@@ -1149,13 +1149,13 @@
     {
       "data": {
         "stringId": 708,
-        "text": "The BLZD Lottery"
+        "text": "The DINO Lottery"
       }
     },
     {
       "data": {
         "stringId": 710,
-        "text": "Buy tickets with BLZD"
+        "text": "Buy tickets with DINO"
       }
     },
     {
@@ -1209,7 +1209,7 @@
     {
       "data": {
         "stringId": 10000,
-        "text": "Deposit Fee will be used to buyback BLZD"
+        "text": "Deposit Fee will be used to buyback DINO"
       }
     },
     {
@@ -1221,7 +1221,7 @@
     {
       "data": {
         "stringId": 10002,
-        "text": "Stake tokens to earn BLZD"
+        "text": "Stake tokens to earn DINO"
       }
     },
     {
