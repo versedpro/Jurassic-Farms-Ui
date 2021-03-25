@@ -1846,10 +1846,10 @@
   dependencies:
     "@json-rpc-tools/types" "^1.6.1"
 
-"@jurassicfarm/jurassic-uikit@^0.1.4#releases":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@jurassicfarm/jurassic-uikit/-/jurassic-uikit-0.1.4.tgz#4a06b8516c6b68e01e32825f611290619326c731"
-  integrity sha512-uBJ0sD8jtxAerrZLJ88rjEeSK1VveMt/83UD2G5ZJuIkiSAdB+MRhsO5OCSW1LaLyZre8EUYeMD3m9LlEvBTEg==
+"@jurassicfarm/jurassic-uikit@^0.1.6#releases":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@jurassicfarm/jurassic-uikit/-/jurassic-uikit-0.1.6.tgz#f4f9aa42e337444d707246686ff7b0b82e45ed57"
+  integrity sha512-RmLv/xarIBmvzIte/YD63mq1z00rcA1TmOscxSEPUTZyjOJsenMu8S3fwwQ/D64zf5dB/INZK3Wg/HUoymCxFQ==
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"

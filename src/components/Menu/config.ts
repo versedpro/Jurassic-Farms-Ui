@@ -58,7 +58,7 @@ const config: MenuEntry[] = [
   },
   {
     label: 'Vaults',
-    icon: 'HomeIcon',
+    icon: 'VaultIcon',
     href: '/vaults',
   }
 ]
