@@ -4,11 +4,15 @@ const tokens = {
       projectLink: 'https://www.binance.com/',
     },
     blzd: {
-      // symbol: 'BLZD',
-      // address: {
-      //   56: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
-      //   97: '0x1977ECbdE6832920c3554E238deDFfBC5ed996c9',
-      // },
+      symbol: 'BLZD',
+      address: {
+        56: '0x57067A6BD75c0E95a6A5f158455926e43E79BeB0',
+        97: '0x1977ECbdE6832920c3554E238deDFfBC5ed996c9',
+      },
+      decimals: 18,
+      projectLink: 'https://jurassicfarm.app/',
+    },
+    dino: {
       symbol: 'DINO',
       address: {
         56: '0x9510b145010f0eAc5a3aefd9a5A07A0a14B2241d',

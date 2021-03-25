@@ -123,7 +123,7 @@
     {
       "data": {
         "stringId": 320,
-        "text": "Stake LP tokens to earn BLZD"
+        "text": "Stake LP tokens to earn DINO"
       }
     },
     {
@@ -651,25 +651,25 @@
     {
       "data": {
         "stringId": 534,
-        "text": "BLZD Stats"
+        "text": "DINO Stats"
       }
     },
     {
       "data": {
         "stringId": 536,
-        "text": "Total BLZD Supply"
+        "text": "Total DINO Supply"
       }
     },
     {
       "data": {
         "stringId": 538,
-        "text": "Total BLZD Burned"
+        "text": "Total DINO Burned"
       }
     },
     {
       "data": {
         "stringId": 540,
-        "text": "New BLZD\/block"
+        "text": "New DINO\/block"
       }
     },
     {
@@ -681,19 +681,19 @@
     {
       "data": {
         "stringId": 544,
-        "text": "BLZD to Harvest"
+        "text": "DINO to Harvest"
       }
     },
     {
       "data": {
         "stringId": 546,
-        "text": "BLZD in Wallet"
+        "text": "DINO in Wallet"
       }
     },
     {
       "data": {
         "stringId": 548,
-        "text": "Collecting BLZD"
+        "text": "Collecting DINO"
       }
     },
     {
@@ -1113,7 +1113,7 @@
     {
       "data": {
         "stringId": 696,
-        "text": "Stake LP tokens to earn BLZD"
+        "text": "Stake LP tokens to earn DINO"
       }
     },
     {

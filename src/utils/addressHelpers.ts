@@ -26,3 +26,12 @@ export const getLotteryAddress = () => {
 export const getLotteryTicketAddress = () => {
   return addresses.lotteryNFT[chainId]
 }
+export const getDinoAddress = () => {
+  return addresses.dino[chainId]
+}
+export const getBusdAddress = () => {
+  return addresses.busd[chainId]
+}
+// export const getRaptorAddress = () => {
+//   return addresses.raptor[chainId]
+// }

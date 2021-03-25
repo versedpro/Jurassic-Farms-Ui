@@ -21,7 +21,6 @@ export interface Ifo {
 
 export enum QuoteToken {
   'BNB' = 'BNB',
-  'BLZD' = 'DINO',
   'SIL' = 'SIL',
   'BSCPAD' = 'BSCPAD',
   'DINO' = 'DINO',

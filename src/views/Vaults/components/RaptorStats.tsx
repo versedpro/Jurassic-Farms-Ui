@@ -9,7 +9,7 @@ import { getCakeAddress } from 'utils/addressHelpers'
 import CardValue from './CardValue'
 import { useFarms, usePriceBlzdBusd } from '../../../state/hooks'
 
-const StyledBlzdStats = styled(Card)`
+const StyledRaptorStats = styled(Card)`
   margin-left: auto;
   margin-right: auto;
 `
@@ -22,7 +22,7 @@ const Row = styled.div`
   margin-bottom: 8px;
 `
 
-const BlzdStats = () => {
+const RaptorStats = () => {
   const TranslateString = useI18n()
   const totalSupply = useTotalSupply()
   const burnedBalance = useBurnedBalance(getCakeAddress())
@@ -38,30 +38,22 @@ const BlzdStats = () => {
   }
 
   return (
-    <StyledBlzdStats>
+    <StyledRaptorStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(534, 'DINO Stats')}
+          {TranslateString(999, 'RAPTOR')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(536, 'Total DINO Supply')}</Text>
+          <Text fontSize="14px">{TranslateString(999, 'Total RAPTOR Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(999, 'Market Cap')}</Text>
-          <CardValue fontSize="14px" value={getBalanceNumber(marketCap)} decimals={0} prefix="$" />
-        </Row>
-        <Row>
-          <Text fontSize="14px">{TranslateString(538, 'Total DINO Burned')}</Text>
+          <Text fontSize="14px">{TranslateString(999, 'Total RAPTOR Burned')}</Text>
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} decimals={0} />
         </Row>
-        <Row>
-          <Text fontSize="14px">{TranslateString(540, 'New DINO/block')}</Text>
-          <Text bold fontSize="14px">{dinoPerBlock}</Text>
-        </Row>
       </CardBody>
-    </StyledBlzdStats>
+    </StyledRaptorStats>
   )
 }
 
-export default BlzdStats
+export default RaptorStats

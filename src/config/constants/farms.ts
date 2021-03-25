@@ -448,24 +448,24 @@ const farms: FarmConfig[] = [
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
   },
-  {
-    // FIXME:
-    pid: 25,
-    risk: 1,
-    lpSymbol: 'FUEL-BNB',
-    lpAddresses: {
-      97: '',
-      56: '0x3763A3263CEaca5e7Cc1Bc22A43920bAd9f743Cd',
-      // DAI-BUSD LP
-    },
-    tokenSymbol: 'FUEL-BNB',
-    tokenAddresses: {
-      97: '',
-      56: '0x2090c8295769791ab7a3cf1cc6e0aa19f35e441a',
-    },
-    quoteTokenSymbol: QuoteToken.BNB,
-    quoteTokenAdresses: contracts.wbnb,
-  },
+  // {
+  //   // FIXME:
+  //   pid: 25,
+  //   risk: 1,
+  //   lpSymbol: 'FUEL-BNB',
+  //   lpAddresses: {
+  //     97: '',
+  //     56: '0x3763A3263CEaca5e7Cc1Bc22A43920bAd9f743Cd',
+  //     // DAI-BUSD LP
+  //   },
+  //   tokenSymbol: 'FUEL-BNB',
+  //   tokenAddresses: {
+  //     97: '',
+  //     56: '0x2090c8295769791ab7a3cf1cc6e0aa19f35e441a',
+  //   },
+  //   quoteTokenSymbol: QuoteToken.BNB,
+  //   quoteTokenAdresses: contracts.wbnb,
+  // },
 
   // { // FIXME:
   //     pid: 12,
