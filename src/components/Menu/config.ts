@@ -34,6 +34,11 @@ const config: MenuEntry[] = [
     href: '/pools',
   },
   {
+    label: 'Vaults',
+    icon: 'VaultIcon',
+    href: '/vaults',
+  },
+  {
     label: 'Info',
     icon: 'InfoIcon',
     items: [
@@ -55,11 +60,6 @@ const config: MenuEntry[] = [
     icon: 'MediumIcon',
     href: 'https://medium.com/jurassicfarm',
     external: true,
-  },
-  {
-    label: 'Vaults',
-    icon: 'VaultIcon',
-    href: '/vaults',
   }
 ]
 
