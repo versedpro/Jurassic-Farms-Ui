@@ -40,9 +40,6 @@ const BusdStats = () => {
           {TranslateString(999, 'BUSD')}
         </Heading>
         <Row>
-          <Text fontSize="14px">{TranslateString(999, 'Current Price')}</Text>
-        </Row>
-        <Row>
           <Text fontSize="14px">{TranslateString(999, 'Total Supply')}</Text>
           {cakeSupply && <CardValue fontSize="14px" value={cakeSupply} decimals={0} />}
         </Row>
