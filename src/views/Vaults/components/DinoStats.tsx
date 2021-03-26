@@ -24,7 +24,7 @@ const Row = styled.div`
 
 const DinoStats = () => {
   const TranslateString = useI18n()
-  const totalSupply = useTotalSupply()
+  const totalSupply = useTotalSupply(getDinoAddress())
   const burnedBalance = useBurnedBalance(getDinoAddress())
   // const farms = useFarms();
   // const eggPrice = usePriceBlzdBusd();

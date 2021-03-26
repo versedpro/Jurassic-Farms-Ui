@@ -6,7 +6,7 @@ import cakeABI from 'config/abi/cake.json'
 import ERC20ABI from 'config/abi/erc20.json'
 import { getContract } from 'utils/web3'
 import { getTokenBalance } from 'utils/erc20'
-import { getCakeAddress, getDinoAddress } from 'utils/addressHelpers'
+import { getBusdAddress, getCakeAddress, getDinoAddress } from 'utils/addressHelpers'
 import useRefresh from './useRefresh'
 
 const useTokenBalance = (tokenAddress: string) => {
@@ -28,19 +28,19 @@ const useTokenBalance = (tokenAddress: string) => {
   return balance
 }
 
-export const useTotalSupply = () => {
+export const useTotalSupply = (tokenAddress: string) => {
   const { slowRefresh } = useRefresh()
   const [totalSupply, setTotalSupply] = useState<BigNumber>()
 
   useEffect(() => {
     async function fetchTotalSupply() {
-      const dinoContract = getContract(ERC20ABI, getDinoAddress())
-      const supply = await dinoContract.methods.totalSupply().call()
+      const contract = getContract(ERC20ABI, tokenAddress)
+      const supply = await contract.methods.totalSupply().call()
       setTotalSupply(new BigNumber(supply))
     }
 
     fetchTotalSupply()
-  }, [slowRefresh])
+  }, [tokenAddress, slowRefresh])
 
   return totalSupply
 }
@@ -51,8 +51,8 @@ export const useBurnedBalance = (tokenAddress: string) => {
 
   useEffect(() => {
     const fetchBalance = async () => {
-      const dinoContract = getContract(ERC20ABI, getDinoAddress())
-      const bal = await dinoContract.methods.balanceOf('0x000000000000000000000000000000000000dEaD').call()
+      const contract = getContract(ERC20ABI, tokenAddress)
+      const bal = await contract.methods.balanceOf('0x000000000000000000000000000000000000dEaD').call()
       setBalance(new BigNumber(bal))
     }
 

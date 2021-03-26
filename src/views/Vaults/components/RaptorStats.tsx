@@ -24,7 +24,7 @@ const Row = styled.div`
 
 const RaptorStats = () => {
   const TranslateString = useI18n()
-  const totalSupply = useTotalSupply()
+  const totalSupply = useTotalSupply(getCakeAddress())
   const burnedBalance = useBurnedBalance(getCakeAddress())
   const farms = useFarms();
   // const eggPrice = usePriceBlzdBusd();

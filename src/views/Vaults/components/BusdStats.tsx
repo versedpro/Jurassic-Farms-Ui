@@ -24,7 +24,7 @@ const Row = styled.div`
 
 const BusdStats = () => {
   const TranslateString = useI18n()
-  const totalSupply = useTotalSupply()
+  const totalSupply = useTotalSupply(getBusdAddress())
   const burnedBalance = useBurnedBalance(getBusdAddress())
   // const tokenBalance = useTokenBalance(getBusdAddress())
   // const farms = useFarms();
